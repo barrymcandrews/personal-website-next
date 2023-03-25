@@ -1,12 +1,10 @@
 import '../../styles/globals.scss';
 import React from 'react';
 import type { AppProps } from 'next/app';
+import GoogleAnalytics from '../components/GoogleAnalytics';
 import { Open_Sans, Montserrat, Source_Code_Pro } from 'next/font/google';
 import Head from 'next/head';
 import Footer from '../components/elements/Footer/Footer';
-import dynamic from 'next/dynamic';
-
-const GoogleAnalytics = dynamic(() => import('../components/GoogleAnalytics'), { ssr: false });
 
 const montserrat = Montserrat({
   weight: ['700', '500', '300'],
