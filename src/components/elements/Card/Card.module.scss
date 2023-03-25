@@ -1,0 +1,87 @@
+
+.Card {
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+  transition: box-shadow 0.3s ease-in-out;
+  margin: 30px 20px;
+  padding: 18px 18px;
+  overflow: auto;
+
+  img {
+    margin: 40px;
+  }
+
+  .imageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 18px;
+    flex-grow: 1;
+  }
+
+  .button {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .cardLink {
+    margin: 10px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.25rem; /* 20px */
+  }
+
+  h4 {
+    font-weight: 700;
+    font-size: 1.5rem; /* 24px */
+    line-height: 2rem; /* 32px */
+  }
+
+  code {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    // Hide the code on small screens
+    @media only screen and (max-width: 480px) {
+      display: none !important;
+    }
+  }
+
+  .m20 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .cardText {
+    max-width: 349px;
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.25rem; /* 20px */
+  }
+}
+
+.Card:hover {
+  //box-shadow: 0 0 20px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.globalLink {
+  text-decoration: none;
+  color: #666666;
+
+  *:not(a) {
+    text-decoration: none;
+  }
+}

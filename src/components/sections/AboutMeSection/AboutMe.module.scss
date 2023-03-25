@@ -1,0 +1,73 @@
+.aboutMeSection {
+  text-align: center;
+  display: flex;
+  margin: 20px;
+  margin-top: 80px !important;
+  gap: 30px;
+  flex-wrap: wrap-reverse;
+
+  .bioCard {
+    flex-grow: 1;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+    transition: box-shadow 0.3s ease-in-out;
+    flex-basis: 450px;
+
+    padding: 30px;
+
+  }
+
+  .imgColumn {
+    display: flex;
+    flex-wrap: wrap;
+    //flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    flex-basis: min-content;
+    align-items: center;
+    flex-grow: 1;
+
+    //@media only screen and (max-width: 550px) {
+    //  display: none;
+    //}
+  }
+
+  .imgCard {
+    display: flex;
+    //padding: 20px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+    transition: box-shadow 0.3s ease-in-out;
+    background-color: rgba(36, 47, 61, 0.06);
+
+  }
+
+  .bioHeader {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .bioBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .bioParagraph {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 650px;
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.25rem; /* 20px */
+
+    @media only screen and (max-width: 650px) {
+      text-align: justify;
+    }
+  }
+
+  .aboutTitle {
+    font-size: 25px;
+  }
+}

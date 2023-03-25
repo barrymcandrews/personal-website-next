@@ -1,0 +1,142 @@
+@import '../variables.module';
+
+$screen-width: 800px;
+
+.fadeIn {
+  opacity: 0;
+}
+.fadeIn.visible {
+  transition: opacity 0.5s ease-in;
+  opacity: 1;
+}
+
+.Home {
+  h1 {
+    @media only screen and (min-width: 600px) {
+      font-size: 60px;
+    }
+    @media only screen and (max-width: 600px) {
+      font-size: 40px;
+    }
+    margin: 0;
+  }
+
+  h2 {
+    @media only screen and (min-width: 600px) {
+      font-size: 20px;
+    }
+    @media only screen and (max-width: 600px) {
+      font-size: 15px;
+    }
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  h4 {
+    font-size: 30px;
+    margin: 0;
+  }
+
+  p {
+    margin-top: 6px;
+    //margin-bottom: 24px;
+    font-size: 16px;
+
+    @media only screen and (max-width: 500px) {
+      //margin-bottom: 40px;
+    }
+  }
+
+  code {
+    font-weight: 700;
+    font-size: 12px;
+    color: $code-color;
+    font-family: $code-font;
+    display: block;
+  }
+
+  .image {
+    width: 130px;
+    border-radius: 50%;
+    pointer-events: none;
+    margin: 30px 30px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .headerText {
+    text-align: left;
+    @media only screen and (min-width: 600px) {
+      min-width: 373px;
+    }
+    @media only screen and (max-width: 600px) {
+      min-width: 249px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      display: inline;
+    }
+  }
+
+  .subtitle {
+    color: #7a7d81;
+  }
+
+  .container {
+    @media only screen and (max-width: $screen-width) {
+      width: 100%;
+    }
+
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $screen-width;
+  }
+
+  .bgDark {
+    background: #212121;
+  }
+
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .mw450 {
+    @media only screen and (min-width: $screen-width) {
+      max-width: 450px;
+    }
+  }
+
+  .mb40 {
+    margin-bottom: 40px;
+  }
+
+  .mobileHide {
+    @media only screen and (max-width: 680px) {
+      display: none;
+    }
+  }
+
+  .desktopHide {
+    @media only screen and (min-width: 680px) {
+      display: none;
+    }
+  }
+
+  .section {
+    margin-top: 20vh;
+  }
+}

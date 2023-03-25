@@ -1,0 +1,32 @@
+{
+  "short_name": "Barry McAndrews",
+  "name": "Barry McAndrews - Software Engineer",
+  "description": "Barry McAndrews' personal website",
+  "icons": [
+    {
+      "src": "/images/web-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/web-128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "/images/web-96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "/images/web-32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "/images/web-16.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    }
+  ]
+}

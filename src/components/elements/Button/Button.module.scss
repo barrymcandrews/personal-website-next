@@ -1,0 +1,22 @@
+.btn {
+  transition: 0.1s linear;
+  text-decoration: none;
+  background: #212121;
+  color: white;
+  border-radius: 500px;
+  padding: 6px 30px 8px;
+  font-weight: 700;
+  margin-top: 12px;
+  font-size: 0.85em;
+
+  @media only screen and (max-width: 550px) {
+    padding: 10px 34px 12px;
+    font-size: 0.95em;
+  }
+}
+
+.btn:hover {
+  background: white;
+  border: #212121 solid 1px;
+  color: #212121;
+}

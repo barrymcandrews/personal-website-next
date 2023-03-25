@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700,500,300|Open+Sans:500,700|Source+Code+Pro:700");
+
+$color: #666666;
+$title-color: #121216;
+$code-color: #7a7d81;
+
+$font: "Open Sans", sans-serif;
+$title-font: "Montserrat", Arial, sans-serif;
+$code-font: "Source Code Pro", Consolas, Menlo, "Courier New", monospace;
+
+html {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-family: $title-font;
+  color: $title-color;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: $title-font;
+  font-weight: 300;
+}
+
+h3 {
+  font-weight: 700;
+  font-family: $title-font;
+  color: $title-color;
+}
+
+h4 {
+  font-weight: 500;
+  font-family: $title-font;
+  color: $title-color;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: $color;
+  margin: 0;
+  width: 100%;
+}
+
+header,
+section {
+  margin-top: 20vh;
+  //margin-bottom: 20vh;
+}
+
+a {
+  color: $title-color;
+}
+
+*::-moz-selection {
+  color: white;
+  background-color: #2f2f2f;
+}
+
+*::selection {
+  color: white;
+  background-color: #2f2f2f;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.m-20 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+// Tailwind
+
+.text-xs {
+  font-size: 0.75rem; /* 12px */
+  line-height: 1rem; /* 16px */
+}
+.text-sm {
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+}
+
+.text-base {
+  font-size: 1rem; /* 16px */
+  line-height: 1.5rem; /* 24px */
+}
+
+.text-lg {
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.75rem; /* 28px */
+}
+
+.text-xl {
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.75rem; /* 28px */
+}
+
+.text-2xl {
+  font-size: 1.5rem; /* 24px */
+  line-height: 2rem; /* 32px */
+}
+//text-3xl	font-size: 1.875rem; /* 30px */
+//line-height: 2.25rem; /* 36px */
+//text-4xl	font-size: 2.25rem; /* 36px */
+//line-height: 2.5rem; /* 40px */
+//text-5xl	font-size: 3rem; /* 48px */
+//line-height: 1;
+//text-6xl	font-size: 3.75rem; /* 60px */
+//line-height: 1;
+//text-7xl	font-size: 4.5rem; /* 72px */
+//line-height: 1;
+//text-8xl	font-size: 6rem; /* 96px */
+//line-height: 1;
+//text-9xl	font-size: 8rem; /* 128px */
+//line-height: 1;
+//
+//}

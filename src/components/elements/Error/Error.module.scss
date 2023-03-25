@@ -1,0 +1,35 @@
+@import "../../../variables.module";
+
+.main {
+  @media only screen and (min-width: 600px) {
+    font-size: 60px;
+  }
+  @media only screen and (max-width: 600px) {
+    font-size: 40px;
+  }
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.trace {
+  font-weight: 700;
+  font-size: 12px;
+  color: $code-color;
+  font-family: $code-font;
+  display: block;
+  position: absolute;
+  transform: translateY(-100%);
+  line-height: 1.5;
+  background: linear-gradient(180deg, white 0%, #c6c6c6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  &::selection {
+    background: red;
+  }
+}

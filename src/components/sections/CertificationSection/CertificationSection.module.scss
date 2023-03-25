@@ -1,0 +1,55 @@
+.CertificationSection {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px 20px;
+  gap: 30px;
+
+  .textCard {
+    display: flex;
+    flex-basis: 450px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    max-width: 530px;
+
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+    transition: box-shadow 0.3s ease-in-out;
+    padding: 18px 18px;
+    overflow: auto;
+
+
+    .header {
+      margin-top: 15px;
+      margin-bottom: 18px;
+    }
+  }
+
+  .imgCard {
+    display: flex;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+    transition: box-shadow 0.3s ease-in-out;
+    background-color: rgba(36, 47, 61, 0.06);
+  }
+
+  .awsBadge {
+    margin: 5px;
+  }
+
+  .awsParagraph {
+    // This with is fitted for the aws paragraph content
+    display: block;
+    max-width: 511px;
+    margin-top: 0;
+
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.25rem; /* 20px */
+  }
+}
